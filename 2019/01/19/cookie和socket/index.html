@@ -96,24 +96,25 @@
 
 
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="1、cookie:用户与服务器的交互产生背景： 由于早期的http是无连接的，非持续连接的，即每个请求/响应对是经一个单独的TCP连接发送的。后来http默认是持续连接，即keep alive，始终保持连接，也就是所有的请求及其响应经由相同的TCP发送。否则，想要获取11张png，就需要建立起11个TCP连接。它对用户与服务器的交互无影响。 由于http是无状态的，即对事务处理没有记忆能力，为了识">
+<meta name="keywords" content="计算机网络基础">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/01/02/hello-world/index.html">
+<meta property="og:title" content="cookie和socket">
+<meta property="og:url" content="http://yoursite.com/2019/01/19/cookie和socket/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="1、cookie:用户与服务器的交互产生背景： 由于早期的http是无连接的，非持续连接的，即每个请求/响应对是经一个单独的TCP连接发送的。后来http默认是持续连接，即keep alive，始终保持连接，也就是所有的请求及其响应经由相同的TCP发送。否则，想要获取11张png，就需要建立起11个TCP连接。它对用户与服务器的交互无影响。 由于http是无状态的，即对事务处理没有记忆能力，为了识">
 <meta property="og:locale" content="Chinese">
-<meta property="og:updated_time" content="2019-01-02T07:41:15.945Z">
+<meta property="og:updated_time" content="2019-01-22T10:05:57.380Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="cookie和socket">
+<meta name="twitter:description" content="1、cookie:用户与服务器的交互产生背景： 由于早期的http是无连接的，非持续连接的，即每个请求/响应对是经一个单独的TCP连接发送的。后来http默认是持续连接，即keep alive，始终保持连接，也就是所有的请求及其响应经由相同的TCP发送。否则，想要获取11张png，就需要建立起11个TCP连接。它对用户与服务器的交互无影响。 由于http是无状态的，即对事务处理没有记忆能力，为了识">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/01/02/hello-world/">
+  <link rel="canonical" href="http://yoursite.com/2019/01/19/cookie和socket/">
 
 
 
@@ -123,7 +124,7 @@
   };
 </script>
 
-  <title>Hello World | Hexo</title>
+  <title>cookie和socket | Hexo</title>
   
 
 
@@ -292,7 +293,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/02/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/19/cookie和socket/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doehexo3">
@@ -309,7 +310,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World
+          <h1 class="post-title" itemprop="name headline">cookie和socket
 
               
             
@@ -335,12 +336,46 @@
                 
               
 
-              <time title="Created: 2019-01-02 16:41:15" itemprop="dateCreated datePublished" datetime="2019-01-02T16:41:15+09:00">2019-01-02</time>
+              <time title="Created: 2019-01-20 00:13:00" itemprop="dateCreated datePublished" datetime="2019-01-20T00:13:00+09:00">2019-01-20</time>
             
 
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-01-22 19:05:57" itemprop="dateModified" datetime="2019-01-22T19:05:57+09:00">2019-01-22</time>
+              
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/1-2/" itemprop="url" rel="index"><span itemprop="name">-1 -2</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -369,15 +404,34 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="1、cookie-用户与服务器的交互"><a href="#1、cookie-用户与服务器的交互" class="headerlink" title="1、cookie:用户与服务器的交互"></a><strong>1、cookie:用户与服务器的交互</strong></h2><p><strong>产生背景</strong>：</p>
+<p>由于早期的http是无连接的，非持续连接的，即每个请求/响应对是经一个单独的TCP连接发送的。后来http默认是持续连接，即keep alive，始终保持连接，也就是所有的请求及其响应经由相同的TCP发送。否则，想要获取11张png，就需要建立起11个TCP连接。它对用户与服务器的交互无影响。</p>
+<p>由于http是无状态的，即对事务处理没有记忆能力，为了识别用户，希望把内容与用户身份联系起来，所以http使用了cookie，允许站点（比如浏览器程序）对用户进行跟踪。</p>
+<p><strong>使用方法</strong>：</p>
+<p>当用户访问淘宝，添加很多产品至购物车，用户的一系列行为全部记录并保存至cookie当中，最后存放于淘宝站点的一个后端数据库中。首先，你本来就提供了你的个人账户信息，比如你的姓名、家庭住址、手机号码、身份证号等等，而cookie记录了你在互联网上的所有足迹，比如你访问了淘宝的哪些店铺、查看了哪些商品、在店铺停留了多长时间、添加至购物车上商品等等，通过利用cookie和你提供的个人账户信息，他们可能从事一些商业活动或者商业犯罪。总而言之，cookie在一定程度上暴露的个人隐私。</p>
+<p><strong>本质</strong>：</p>
+<p>它主要用于用户与服务器之间的交互，即对用户行为进行跟踪并记忆用户在互联网上锁产生的足迹。本质上是一个数据结构，用户存储用户访问站点的信息。</p>
+<p>**</p>
+<h2 id="2、socket-进程通信"><a href="#2、socket-进程通信" class="headerlink" title="2、socket:进程通信"></a>2、socket:进程通信</h2><p>**</p>
+<p><strong>通信本质</strong>：</p>
+<p>互联网中两台主机之间的通信，实际上指的是运行在不同端系统上的进程间的通信，比如浏览器是一个客户进程，而web服务器是一台服务器进程。</p>
+<p><strong>使用方法</strong>：</p>
+<p>进程通过一个套接字（socket）的软件接口向网络发送报文和从网络接受报文。socket是同一台主机内运输层与网络层之间的接口，通常进程类比于房子，socket类比于门，门内侧为运输层，而门另一侧为网络层。</p>
+<p>一台主机上可能运行了很多网络应用进程，每个进程具有一个或多个套接字，所以在目的主机指定特定的标识符。通过3次握手，客户端与服务器端建立一个TCP连接，同时将客户端套接字地址（ip地址和端口号）与服务器端套接字地址（ip地址和端口号）关联起来，即创建了一个TCP套接字，而这个套接字指定了两端的主机地址（ip和端口号）。</p>
+<p>只有通过初始化一个socket，建议一个TCP连接，方能进行数据报文的传输、发送。</p>
+<p>clientSocket.close() 意味着关闭套接字，因此关闭了客户和服务器之间的TCP连接，同时释放了资源，即变量和变量。</p>
+<p><strong>拓展：运输层和网络层的关系</strong></p>
+<p>在协议栈中，运输层刚好位于网络层之上。网络层提供了主机之间的逻辑通信，而运输层为运行在不同主机上的进程之间提供了逻辑 通信。</p>
+<p><strong>类比例子</strong>：</p>
+<p>两个家庭，一家位于美国东海岸，一家位于美国西海岸，每家有12个孩子，他们都是堂兄弟姐妹。这两个家庭的孩子喜欢彼此通信，每个人每星期要互相写一封信，每封信都用单独的信封通过传统的邮政服务传送。因此，每个家庭每星期向另一家发送12X12封信。每个家庭都有一个孩子负责收发邮件，西海岸的是Ann而东海岸的是Bill。每星期Ann去她的所有兄弟姐妹那里收集信件，并将这些信件交到每天到家门口来的邮政服务的邮车上。当信件到达西海岸家庭时，Ann也负责将信件分发到她的兄弟姐妹手上。</p>
+<p>在这个例子中，邮政服务（网络层协议）为两个家庭提供逻辑通信，邮政服务将信件从一家运往另一家，而不是一个人运往另一个人。</p>
+<p>Ann和Bill为堂兄弟姐妹之间提供了逻辑通信，Ann和Bill从兄弟姐妹那里交付信件。</p>
+<p>应用层报文 = 信封上的字符<br>进程 = 堂兄弟姐妹<br>主机（又称端系统） = 家庭<br>运输层协议 = Ann和Bill<br>网络层协议 = 邮政服务（包括邮车）<br>1、运输层协议只工作在端系统中。在端系统中，运输层协议将来自进程的报文移动到网络边缘（即网络层）。</p>
+<p>2、运输层协议能够提供的服务常常受制于底层网络层协议的服务模型 </p>
+<p>Ann和Bill所能提供的服务明显受限于邮政服务所能提供的服务。如果邮政服务不能提供在两家之间传递邮件所需时间的最大期限（例如3天），那么Ann和Bill就不可能保证邮件在堂兄弟姐妹之间传递信件的最大期限。类似的，运输层协议能够提供的服务常常受制于底层网络层协议的服务模型。如果网络层协议无法为主机之间发送的运输层报文段提供时延或宽带保证的话，运输层协议也就无法为进程之间发送的应用程序报文提供时延或宽带保证。（就像没网或者网速慢，也就无法发送报文到网络层，进入无法到达目的主机）</p>
+<p>3、TCP/IP协议属于运输层协议</p>
+<p>4、运输层的多路复用与多路分解，也就是将由网络层提供的主机到主机交付服务延伸到为运行在主机上的应用程序提供进程到进程的交付服务。在目的主机，运输层从紧邻其下的网络层接收报文段。运输层负责将这些报文段中的数据交付给在主机上运行的适当应用程序进程。（在接收主机上的运输层实际上并没有直接将数据交给进程，而是交给了一个中间的套接字）</p>
+<p>由于一个进程有一个或多个套接字，为了将报文定向到正确的套接字，接收端的运输层会检查报文的一些字段，标识出该接收套接字，方能将报文定向到正确的接收套接字。这一过程称为多路分解。</p>
 
       
     </div>
@@ -399,6 +453,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/计算机网络基础/" rel="tag"># 计算机网络基础</a>
+          
+        </div>
+      
 
       
       
@@ -408,15 +468,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/01/10/hello/" rel="next" title="hello">
+                <i class="fa fa-chevron-left"></i> hello
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/01/03/苏泠鸢/" rel="prev" title="苏泠鸢">
-                苏泠鸢 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -554,7 +614,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、cookie-用户与服务器的交互"><span class="nav-number">1.</span> <span class="nav-text">1、cookie:用户与服务器的交互</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、socket-进程通信"><span class="nav-number">2.</span> <span class="nav-text">2、socket:进程通信</span></a></li></ol></div>
             
 
           </div>
