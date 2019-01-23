@@ -2,23 +2,14 @@
 
 
 
-
-
-
-
-
-
-
-
-
   
 
 
-<html class="theme-next muse use-motion" lang="Chinese">
+<html class="theme-next mist use-motion" lang="">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="theme-color" content="#222">
 
 
@@ -29,6 +20,8 @@
 
 
 
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -45,22 +38,9 @@
 
 
 
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
-
-<link rel="stylesheet" href="/css/main.css?v=6.7.0">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.7.0">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.7.0">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.7.0">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=6.7.0" color="#222">
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
 
 
 
@@ -68,18 +48,61 @@
 
 
 
-<script id="hexo.configurations">
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
-    version: '6.7.0',
+    scheme: 'Mist',
+    version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
+    fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -91,36 +114,12 @@
 </script>
 
 
-  
-
-
-
-
-  <meta name="description" content="肖梦晗的网站">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="肖梦晗的网站">
-<meta property="og:locale" content="Chinese">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="肖梦晗的网站">
-
-
-
-
-
 
   <link rel="canonical" href="http://yoursite.com/">
 
 
 
-<script id="page.configurations">
-  CONFIG.page = {
-    sidebar: "",
-  };
-</script>
+
 
   <title>Hexo</title>
   
@@ -132,38 +131,9 @@
 
 
 
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .motion-element,
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-title { opacity: initial; }
-
-  .use-motion .logo,
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="Chinese">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
 
   
   
@@ -176,7 +146,7 @@
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta">
+  <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
@@ -186,16 +156,13 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-    
       
-        <p class="site-subtitle">肖梦晗的网易云音乐</p>
+        <p class="site-subtitle">仙仙仙仙仙女泠，你是头猪啊</p>
       
-    
-    
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Toggle navigation bar">
+    <button>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -203,55 +170,95 @@
   </div>
 </div>
 
-
-
 <nav class="site-nav">
+  
+
   
     <ul id="menu" class="menu">
       
         
-        
-        
-          
-          <li class="menu-item menu-item-home menu-item-active">
-
-    
-    
-    
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            Home
+          </a>
+        </li>
       
-    
-
-    
-
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
-
-  </li>
         
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-
-    
-    
-    
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            About
+          </a>
+        </li>
       
-    
-
-    
-
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
-
-  </li>
-
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
+          </a>
+        </li>
       
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>
+            
+            Schedule
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-sitemap">
+          <a href="/sitemap.xml" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
+            
+            Sitemap
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
+            
+            Commonweal 404
+          </a>
+        </li>
+      
+
       
     </ul>
-  
-
-  
-    
-
   
 
   
@@ -259,20 +266,12 @@
 
 
 
-  
-
-
-
-</div>
+ </div>
     </header>
-
-    
-
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -285,18 +284,16 @@
   
   
 
-  
-
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/19/cookie和socket/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/cookie和socket/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doehexo3">
-      <meta itemprop="description" content="肖梦晗的网站">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -311,20 +308,11 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                
-                <a href="/2019/01/19/cookie和socket/" class="post-title-link" itemprop="url">cookie和socket</a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2019/01/20/cookie和socket/" itemprop="url">cookie和socket</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-
-            
-            
-            
-
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -332,30 +320,13 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-
-              
-                
-              
-
-              <time title="Created: 2019-01-20 00:13:00" itemprop="dateCreated datePublished" datetime="2019-01-20T00:13:00+09:00">2019-01-20</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-20T00:13:00+08:00">
+                2019-01-20
+              </time>
             
 
             
-              
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-01-22 19:05:57" itemprop="dateModified" datetime="2019-01-22T19:05:57+09:00">2019-01-22</time>
-              
             
           </span>
 
@@ -371,7 +342,11 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/1-2/" itemprop="url" rel="index"><span itemprop="name">-1 -2</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/我与计算机/" itemprop="url" rel="index">
+                    <span itemprop="name">我与计算机</span>
+                  </a>
+                </span>
 
                 
                 
@@ -440,18 +415,12 @@
         
       
     </div>
-
-    
-
     
     
     
 
     
 
-    
-      
-    
     
 
     
@@ -482,8 +451,6 @@
 
   
   
-  
-
   
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
@@ -495,7 +462,7 @@
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doehexo3">
-      <meta itemprop="description" content="肖梦晗的网站">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -510,20 +477,11 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                
-                <a href="/2019/01/10/hello/" class="post-title-link" itemprop="url">hello</a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2019/01/10/hello/" itemprop="url">hello</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-
-            
-            
-            
-
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -531,18 +489,13 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-
-              
-                
-              
-
-              <time title="Created: 2019-01-10 19:49:25 / Modified: 20:49:25" itemprop="dateCreated datePublished" datetime="2019-01-10T19:49:25+09:00">2019-01-10</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-10T19:49:25+08:00">
+                2019-01-10
+              </time>
             
 
             
-              
 
-              
             
           </span>
 
@@ -581,18 +534,12 @@
         
       
     </div>
-
-    
-
     
     
     
 
     
 
-    
-      
-    
     
 
     
@@ -625,18 +572,16 @@
   
   
 
-  
-
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/03/我要朝南走，你却往北去/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/04/我要朝南走，你却往北去/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doehexo3">
-      <meta itemprop="description" content="肖梦晗的网站">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -651,20 +596,11 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                
-                <a href="/2019/01/03/我要朝南走，你却往北去/" class="post-title-link" itemprop="url">我要朝南走，你却往北去</a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2019/01/04/我要朝南走，你却往北去/" itemprop="url">我要朝南走，你却往北去</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-
-            
-            
-            
-
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -672,18 +608,13 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-
-              
-                
-              
-
-              <time title="Created: 2019-01-04 00:15:31 / Modified: 01:15:31" itemprop="dateCreated datePublished" datetime="2019-01-04T00:15:31+09:00">2019-01-04</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-04T00:15:31+08:00">
+                2019-01-04
+              </time>
             
 
             
-              
 
-              
             
           </span>
 
@@ -722,18 +653,12 @@
         
       
     </div>
-
-    
-
     
     
     
 
     
 
-    
-      
-    
     
 
     
@@ -766,18 +691,16 @@
   
   
 
-  
-
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/03/肖梦含/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/04/肖梦含/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doehexo3">
-      <meta itemprop="description" content="肖梦晗的网站">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -792,20 +715,11 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                
-                <a href="/2019/01/03/肖梦含/" class="post-title-link" itemprop="url">肖梦含</a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2019/01/04/肖梦含/" itemprop="url">肖梦含</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-
-            
-            
-            
-
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -813,30 +727,13 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-
-              
-                
-              
-
-              <time title="Created: 2019-01-04 00:13:00" itemprop="dateCreated datePublished" datetime="2019-01-04T00:13:00+09:00">2019-01-04</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-04T00:13:00+08:00">
+                2019-01-04
+              </time>
             
 
             
-              
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-01-21 17:17:22" itemprop="dateModified" datetime="2019-01-21T17:17:22+09:00">2019-01-21</time>
-              
             
           </span>
 
@@ -852,7 +749,11 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/1-2/" itemprop="url" rel="index"><span itemprop="name">-1 -2</span></a></span>
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/我与计算机/" itemprop="url" rel="index">
+                    <span itemprop="name">我与计算机</span>
+                  </a>
+                </span>
 
                 
                 
@@ -904,18 +805,12 @@
         
       
     </div>
-
-    
-
     
     
     
 
     
 
-    
-      
-    
     
 
     
@@ -948,18 +843,16 @@
   
   
 
-  
-
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/03/苏泠鸢/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/04/苏泠鸢/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doehexo3">
-      <meta itemprop="description" content="肖梦晗的网站">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -974,20 +867,11 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                
-                <a href="/2019/01/03/苏泠鸢/" class="post-title-link" itemprop="url">苏泠鸢</a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2019/01/04/苏泠鸢/" itemprop="url">苏泠鸢</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-
-            
-            
-            
-
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -995,18 +879,13 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-
-              
-                
-              
-
-              <time title="Created: 2019-01-04 00:12:18 / Modified: 01:12:18" itemprop="dateCreated datePublished" datetime="2019-01-04T00:12:18+09:00">2019-01-04</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-04T00:12:18+08:00">
+                2019-01-04
+              </time>
             
 
             
-              
 
-              
             
           </span>
 
@@ -1045,18 +924,12 @@
         
       
     </div>
-
-    
-
     
     
     
 
     
 
-    
-      
-    
     
 
     
@@ -1089,8 +962,6 @@
   
   
 
-  
-
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
@@ -1100,7 +971,7 @@
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doehexo3">
-      <meta itemprop="description" content="肖梦晗的网站">
+      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -1115,20 +986,11 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                
-                <a href="/2019/01/02/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-              
-            
-          </h1>
+                <a class="post-title-link" href="/2019/01/02/hello-world/" itemprop="url">Hello World</a></h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-
-            
-            
-            
-
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1136,12 +998,11 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-02T15:41:15+08:00">
+                2019-01-02
+              </time>
+            
 
-              
-                
-              
-
-              <time title="Created: 2019-01-02 16:41:15" itemprop="dateCreated datePublished" datetime="2019-01-02T16:41:15+09:00">2019-01-02</time>
             
 
             
@@ -1191,18 +1052,12 @@
         
       
     </div>
-
-    
-
     
     
     
 
     
 
-    
-      
-    
     
 
     
@@ -1235,6 +1090,9 @@
           </div>
           
 
+
+          
+
         </div>
         
           
@@ -1255,77 +1113,65 @@
 
       
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">John Doehexo3</p>
-              <p class="site-description motion-element" itemprop="description">肖梦晗的网站</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">6</span>
-                    <span class="site-state-item-name">posts</span>
-                  </a>
-                </div>
-              
+          <nav class="site-state motion-element">
 
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  
-                    
-                    
-                      
-                    
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">categories</span>
-                  
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  
-                    
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">tags</span>
-                  
-                </div>
-              
-            </nav>
-          
-
-          
-
-          
-
-          
-
-          
-          
-
-          
             
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">categories</span>
+                
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
+            
+
+          </nav>
+
           
+
+          
+
+          
+          
+
+          
+          
+
           
 
         </div>
-      </div>
+      </section>
 
       
 
@@ -1342,18 +1188,16 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love" id="animate">
+  <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">John Doehexo3</span>
 
   
-
-  
 </div>
 
 
-  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
@@ -1361,13 +1205,12 @@
 
 
 
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.7.0</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
 
         
-
 
 
 
@@ -1388,14 +1231,11 @@
 
     
 
-    
-
-    
   </div>
 
   
 
-<script>
+<script type="text/javascript">
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -1409,11 +1249,7 @@
 
 
 
-
-
-
-
-
+  
 
 
 
@@ -1427,59 +1263,95 @@
 
 
   
-  <script src="/lib/jquery/index.js?v=2.1.3"></script>
-
   
-  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-
-  
-
-
-  <script src="/js/src/utils.js?v=6.7.0"></script>
-
-  <script src="/js/src/motion.js?v=6.7.0"></script>
-
-
-
-  
-  
-
-
-  <script src="/js/src/schemes/muse.js?v=6.7.0"></script>
-
-
-
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
   
 
   
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
 
-  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
 
 
   
-
-
-
-
-
   
 
   
 
   
 
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
   
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
 
   
 
@@ -1488,9 +1360,6 @@
   
 
   
-
-  
-
   
 
   
